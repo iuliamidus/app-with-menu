@@ -9,14 +9,14 @@ export default function CSHeader() {
     const navigation = useNavigation();
 
       return (
-        <Header>
+        <Header style={{backgroundColor: '#103662'}}>
           <Left>
-            <Button transparent>
+            <Button transparent light>
               <Icon name='menu' onPress={() => {navigation.openDrawer()}}/>
             </Button>
           </Left>
           <Body>
-            <Title>Header</Title>
+            <Title style={{color: 'white'}}>Dashboard</Title>
           </Body>
           <Right />
         </Header>

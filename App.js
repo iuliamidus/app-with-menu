@@ -10,7 +10,7 @@ import Login from './src/screens/Login';
 import Dashboard from './src/screens/Dashboard';
 import NewClient from './src/screens/NewClient';
 import ClientList from './src/screens/ClientList';
-
+import ClientOverV from './src/screens/ClientOverV';
 //const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
@@ -23,6 +23,7 @@ export default class App extends Component {
           <Drawer.Screen name="Login" component={Login} />
           <Drawer.Screen name="New Client" component={NewClient} />
           <Drawer.Screen name="Client List" component={ClientList} />
+          <Drawer.Screen name="Client overview" component={ClientOverV} />
         </Drawer.Navigator>
       </NavigationContainer>
       /*
