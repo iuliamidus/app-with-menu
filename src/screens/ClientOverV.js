@@ -56,7 +56,7 @@ export default class PickerExample extends Component {
       <Container>
         <CSHeader/>
 
-        <Tabs tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}>
+        <Tabs tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}> 
           <Tab heading="Overview" activeTextStyle={{color: '#103662'}}>
             <Content padder>
               <Card transparent>
@@ -126,14 +126,10 @@ export default class PickerExample extends Component {
               </Card>
             </Content>
           </Tab>
-          <Tab heading="Portfolio" activeTextStyle={{color: '#103662'}}>
+
+
+          <Tab heading="Execution" activeTextStyle={{color: '#103662'}}>
             <Content>
-              <Tabs
-                tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}>
-                <Tab
-                  heading="Execution Only"
-                  activeTextStyle={{color: '#103662'}}>
-                  <Content>
                     <Card transparent style={{height: 200}}>
                       <CardItem>
                         <Text
@@ -159,9 +155,10 @@ export default class PickerExample extends Component {
                       </CardItem>
                     </Card>
                   </Content>
-                </Tab>
-                <Tab heading="Advisory" activeTextStyle={{color: '#103662'}}>
-                  <Content>
+                  </Tab>
+
+          <Tab heading="Advisory" activeTextStyle={{color: '#103662'}}>
+          <Content>
                     <Card transparent style={{height: 200}}>
                       <CardItem>
                         <Text
@@ -199,11 +196,8 @@ export default class PickerExample extends Component {
                       </CardItem>
                     </Card>
                   </Content>
-                </Tab>
-              </Tabs>
-            </Content>
           </Tab>
-          <Tab heading="Insights" activeTextStyle={{color: '#103662'}} />
+
           <Tab heading="Documents" activeTextStyle={{color: '#103662'}}>
             <Content padder>
               <Text />
