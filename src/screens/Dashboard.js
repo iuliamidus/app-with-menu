@@ -17,15 +17,16 @@ import {
 } from 'native-base';
 
 import { useNavigation } from '@react-navigation/native';
-
 import CSHeader from '../components/CSHeader';
 
 export default class UpcomingEvents extends Component {
   render() {
+    const pageTitle = 'Dashboard';
+
     return (
       
       <Container>
-        <CSHeader/>
+        <CSHeader pageTitle={pageTitle}/>
         <Content padder>
           <Card style={{borderRadius: 8}}>
             <CardItem

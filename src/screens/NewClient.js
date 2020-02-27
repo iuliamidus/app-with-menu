@@ -4,11 +4,14 @@ import { Container, Header, Left, Button, Icon, Body, Title, Content, Form, Item
 import {Image, StatusBar} from 'react-native';
 import { color } from 'react-native-reanimated';
 import CSHeader from '../components/CSHeader';
+import { useNavigation } from '@react-navigation/native';
+
 export default class NewClient extends Component {
   render() {
+    const pageTitle='Add New Client';
     return (
       <Container>
-        <CSHeader/>
+        <CSHeader pageTitle={pageTitle}/>
         <Content>
           <Form>
           
