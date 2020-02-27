@@ -75,7 +75,7 @@ export default class Login extends Component {
             }}
             block
             onPress={() =>
-              this.props.navigation.replace('Dashboard')
+              this.props.navigation.navigate('Dashboard')
             } /*onPress={this._onLogin}*/
           >
             <Text>Login</Text>

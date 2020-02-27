@@ -27,7 +27,7 @@ export default class UpcomingEvents extends Component {
       <Container>
         <CSHeader/>
         <Content padder>
-          <Card style={{borderRadius: 8}}>
+          <Card transparent style={{borderRadius: 8}}>
             <CardItem
               header
               bordered
@@ -39,35 +39,29 @@ export default class UpcomingEvents extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Button backgroundColor="#103662">
-                  <Text> 09{'\n'}APR</Text>
+                <Button style={{backgroundColor: '#103662'}}>
+                  <Text style={{fontSize: 20, textAlign: 'center'}}> 09 APR</Text>
                 </Button>
                 <Body>
-                  <Text>Meeting with Elon</Text>
-                  <Text>Credit Suisse Office</Text>
-                  <Text>5pm - 7pm</Text>
+                  <Text style={{fontSize: 20,}} >Meeting with Elon</Text>
+                  <Text style={{fontSize: 20,}}>Credit Suisse Office</Text>
+                  <Text style={{fontSize: 20,}}>5pm - 7pm</Text>
                 </Body>
               </Left>
             </CardItem>
             <CardItem>
               <Left>
-                <Button backgroundColor="#103662">
-                  <Text> 10{'\n'}JUN</Text>
+                <Button style={{backgroundColor: '#103662'}}>
+                  <Text style={{fontSize: 20, textAlign: 'center'}}> 10 JUN</Text>
                 </Button>
                 <Body>
-                  <Text>Product Training</Text>
-                  <Text>8am - 10am</Text>
+                  <Text style={{fontSize: 20,}}>Product Training</Text>
+                  <Text style={{fontSize: 20,}}>8am - 10am</Text>
                 </Body>
               </Left>
             </CardItem>
-            <CardItem
-              bordered
-              style={{
-                borderBottomLeftRadius: 8,
-                borderBottomRightRadius: 8,
-              }}></CardItem>
           </Card>
-          <Card style={{borderRadius: 8}}>
+          <Card transparent style={{borderRadius: 8}}>
             <CardItem
               header
               bordered
@@ -79,19 +73,13 @@ export default class UpcomingEvents extends Component {
             </CardItem>
             <CardItem>
               <Body>
-                <Text style={{fontSize: 25}}>- EXT.1 up by 0.8%</Text>
-                <Text style={{fontSize: 25}}>
+                <Text style={{fontSize: 20}}>- EXT.1 up by 0.8%</Text>
+                <Text style={{fontSize: 20}}>
                   - FTSE down by 1.7%{' '}
                   <Icon name="alert" style={{fontSize: 30, color: 'red'}} />
                 </Text>
               </Body>
             </CardItem>
-            <CardItem
-              bordered
-              style={{
-                borderBottomLeftRadius: 8,
-                borderBottomRightRadius: 8,
-              }}></CardItem>
           </Card>
         </Content>
       </Container>
