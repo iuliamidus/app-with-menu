@@ -49,17 +49,7 @@ export default class UpcomingEvents extends Component {
                 </Body>
               </Left>
             </CardItem>
-            <CardItem>
-              <Left>
-                <Button style={{backgroundColor: '#103662'}}>
-                  <Text style={{fontSize: 20, textAlign: 'center'}}> 10 JUN</Text>
-                </Button>
-                <Body>
-                  <Text style={{fontSize: 20,}}>Product Training</Text>
-                  <Text style={{fontSize: 20,}}>8am - 10am</Text>
-                </Body>
-              </Left>
-            </CardItem>
+            
           </Card>
           <Card transparent style={{borderRadius: 8}}>
             <CardItem
