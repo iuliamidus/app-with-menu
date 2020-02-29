@@ -15,7 +15,12 @@ export default class ClientList extends Component {
       <Container>
         <CSHeader pageTitle={pageTitle}/>
         <Content>
-        
+        <Item>
+            <Icon name="ios-search" />
+            <Input placeholder="Search"/>
+            <Icon name="ios-people" />
+          </Item>
+          
           <List>
             <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
             <Left>

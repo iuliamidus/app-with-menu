@@ -18,13 +18,53 @@ import {
 
 import { useNavigation } from '@react-navigation/native';
 import CSHeader from '../components/CSHeader';
-
 export default class UpcomingEvents extends Component {
+  _isMounted= false;
+  constructor(props) {
+    super(props);
+    this.state = {
+      error: null,
+      isLoaded: false,
+      items: []
+    };
+  }
+  componentDidMount() {
+    this._isMounted = true;
+
+    var url =
+      "https://newsapi.org/v2/top-headlines?" +
+      "country=us&" +
+      "apiKey=9cb1bba31aa54d038eb01b75da21cd94";
+
+    fetch(url)
+      .then(res => res.json())
+      .then(
+        result => {
+          if(this._isMounted) {
+          this.setState({
+            isLoaded: true,
+            items: result.articles
+          });
+        }
+        },
+
+        error => {
+          this.setState({
+            isLoaded: true,
+            error
+          });
+        }
+      );
+  }
+
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
   render() {
+    const { error, isLoaded, items } = this.state;
     const pageTitle = 'Dashboard';
 
     return (
-      
       <Container>
         <CSHeader pageTitle={pageTitle}/>
         <Content padder>
@@ -36,6 +76,9 @@ export default class UpcomingEvents extends Component {
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
                 UPCOMING EVENTS
+              </Text>
+              <Text>
+              {items.length}
               </Text>
             </CardItem>
             <CardItem>
@@ -92,8 +135,22 @@ export default class UpcomingEvents extends Component {
               style={{
                 borderBottomLeftRadius: 8,
                 borderBottomRightRadius: 8,
-              }}></CardItem>
+              }}>
+        </CardItem>
           </Card>
+          <Card>
+          {items.map(item => (
+            <CardItem>
+              <Text key={item.title}>
+              </Text>
+              <Icon active name="logo-googleplus" />
+              <Text>{item.title}</Text>
+              <Right>
+                <Icon name="arrow-forward" />
+              </Right>
+             </CardItem>
+            ))}
+           </Card>
         </Content>
       </Container>
     );
