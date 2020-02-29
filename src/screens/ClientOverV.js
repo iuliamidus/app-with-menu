@@ -58,6 +58,7 @@ export default class PickerExample extends Component {
     return (
       <Container>
        <CSHeader pageTitle={pageTitle}/>
+        <CSHeader />
 
         <Tabs tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}>
           <Tab heading="Overview" activeTextStyle={{color: '#103662'}}>
@@ -129,84 +130,77 @@ export default class PickerExample extends Component {
               </Card>
             </Content>
           </Tab>
-          <Tab heading="Portfolio" activeTextStyle={{color: '#103662'}}>
+
+          <Tab heading="Execution" activeTextStyle={{color: '#103662'}}>
             <Content>
-              <Tabs
-                tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}>
-                <Tab
-                  heading="Execution Only"
-                  activeTextStyle={{color: '#103662'}}>
-                  <Content>
-                    <Card transparent style={{height: 200}}>
-                      <CardItem>
-                        <Text
-                          style={{
-                            fontSize: 20,
-                            fontWeight: 'bold',
-                            color: '#103662',
-                          }}>
-                          Portfolio Overview
-                        </Text>
-                      </CardItem>
-                    </Card>
-                    <Card transparent style={{height: 200}}>
-                      <CardItem>
-                        <Text
-                          style={{
-                            fontSize: 20,
-                            fontWeight: 'bold',
-                            color: '#103662',
-                          }}>
-                          Securities
-                        </Text>
-                      </CardItem>
-                    </Card>
-                  </Content>
-                </Tab>
-                <Tab heading="Advisory" activeTextStyle={{color: '#103662'}}>
-                  <Content>
-                    <Card transparent style={{height: 200}}>
-                      <CardItem>
-                        <Text
-                          style={{
-                            fontSize: 20,
-                            fontWeight: 'bold',
-                            color: '#103662',
-                          }}>
-                          Portfolio Overview
-                        </Text>
-                      </CardItem>
-                    </Card>
-                    <Card transparent style={{height: 200}}>
-                      <CardItem>
-                        <Text
-                          style={{
-                            fontSize: 20,
-                            fontWeight: 'bold',
-                            color: '#103662',
-                          }}>
-                          Securities
-                        </Text>
-                      </CardItem>
-                    </Card>
-                    <Card transparent style={{height: 200}}>
-                      <CardItem>
-                        <Text
-                          style={{
-                            fontSize: 20,
-                            fontWeight: 'bold',
-                            color: '#103662',
-                          }}>
-                          Securities Watchlist
-                        </Text>
-                      </CardItem>
-                    </Card>
-                  </Content>
-                </Tab>
-              </Tabs>
+              <Card transparent style={{height: 200}}>
+                <CardItem>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                    }}>
+                    Portfolio Overview
+                  </Text>
+                </CardItem>
+              </Card>
+              <Card transparent style={{height: 200}}>
+                <CardItem>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                    }}>
+                    Securities
+                  </Text>
+                </CardItem>
+              </Card>
             </Content>
           </Tab>
-          <Tab heading="Insights" activeTextStyle={{color: '#103662'}} />
+
+          <Tab heading="Advisory" activeTextStyle={{color: '#103662'}}>
+            <Content>
+              <Card transparent style={{height: 200}}>
+                <CardItem>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                    }}>
+                    Portfolio Overview
+                  </Text>
+                </CardItem>
+              </Card>
+              <Card transparent style={{height: 200}}>
+                <CardItem>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                    }}>
+                    Securities
+                  </Text>
+                </CardItem>
+              </Card>
+              <Card transparent style={{height: 200}}>
+                <CardItem>
+                  <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                    }}>
+                    Securities Watchlist
+                  </Text>
+                </CardItem>
+              </Card>
+            </Content>
+          </Tab>
+
           <Tab heading="Documents" activeTextStyle={{color: '#103662'}}>
             <Content padder>
               <Text />
