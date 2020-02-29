@@ -1,45 +1,70 @@
-
-import React, { Component } from 'react';
-import { Container, Header, Left, Button, Icon, Body, Title, Content, Form, Item, Input, Label, Text } from 'native-base';
+import React, {Component} from 'react';
+import {
+  Container,
+  Header,
+  Left,
+  Button,
+  Icon,
+  Body,
+  Title,
+  Content,
+  Form,
+  Item,
+  Input,
+  Label,
+  Text,
+} from 'native-base';
 import {Image, StatusBar} from 'react-native';
-import { color } from 'react-native-reanimated';
+import {color} from 'react-native-reanimated';
 import CSHeader from '../components/CSHeader';
 export default class NewClient extends Component {
   render() {
     return (
       <Container>
-        <CSHeader/>
-        <Content>
-          <Form>
-          
-            <Item floatingLabel>
-              <Label>First Name</Label>
-              <Input />
-            </Item>
-            <Item  floatingLabel last style = {marginTop=40} >
-              <Label>Middle Name</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last style = {marginTop=40}>
-              <Label>Last Name</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last style = {marginTop=40} >
-              <Label>E-mail Address</Label>
-              <Input />
-            </Item>
-            <Item floatingLabel last style = {marginTop=40, marginBottom=60}>
-              <Label>Phone number</Label>
-              <Input />
-            </Item>
-            <Item regular style = {marginTop=60, marginBottom=60}>
-            <Input placeholder='Additional information' />
+        <CSHeader />
+        <Content padder>
+          <Text
+            style={{
+              fontSize: 20,
+              fontWeight: 'bold',
+              color: '#103662',
+              marginBottom: 10,
+              marginTop: 10,
+              marginStart: 15,
+            }}>
+            Basic Information
+          </Text>
+          <Item rounded style={{marginTop: 10}}>
+            <Input
+              placeholder="First Name"
+              style={{fontSize: 20, marginStart: 7}}
+            />
           </Item>
-          </Form>
+          <Item rounded style={{marginTop: 10}}>
+            <Input
+              placeholder="Middle Name"
+              style={{fontSize: 20, marginStart: 7}}
+            />
+          </Item>
+          <Item rounded style={{marginTop: 10}}>
+            <Input
+              placeholder="Last Name"
+              style={{fontSize: 20, marginStart: 7}}
+            />
+          </Item>
+          <Item rounded style={{marginTop: 10}}>
+            <Input
+              placeholder="Email"
+              style={{fontSize: 20, marginStart: 7}}
+            />
+          </Item>
+          <Item rounded style={{marginTop: 10}}>
+            <Input
+              placeholder="Phone Number"
+              style={{fontSize: 20, marginStart: 7}}
+            />
+          </Item>
 
-          <Button success style={{marginTop: 30, width: 120, marginLeft: 250}}>
-            <Text>Save</Text>
-          </Button>
         </Content>
       </Container>
     );

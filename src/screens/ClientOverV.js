@@ -239,46 +239,53 @@ export default class PickerExample extends Component {
 
           <Tab heading="Documents" activeTextStyle={{color: '#103662'}}>
             <Content padder>
-              <Text />
-              <Item regular>
-                <Input placeholder="Client ID" style={{fontSize: 20}} />
+            <Text
+                    style={{
+                      fontSize: 20,
+                      fontWeight: 'bold',
+                      color: '#103662',
+                      marginBottom:10,
+                      marginTop: 10,
+                      marginStart: 15
+                    
+                    }}>
+                    ONBOARDING
+                  </Text>
+              
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Client ID" style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Item regular style={{marginTop: 10}}>
-                <Input placeholder="First Name " style={{fontSize: 20}} />
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="First Name " style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Item regular style={{marginTop: 10}}>
-                <Input placeholder="Last Name " style={{fontSize: 20}} />
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Last Name " style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Form style={{marginTop: 10, fontSize: 20}}>
-                <Textarea
-                  rowSpan={3}
-                  bordered
-                  placeholder="Residential Address"
-                  style={{fontSize: 20}}
-                />
-              </Form>
-              <Item regular style={{marginTop: 10}}>
-                <Input placeholder="Date of Birth" style={{fontSize: 20}} />
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Residential Address " style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Item regular style={{marginTop: 10}}>
-                <Input placeholder="Mailing Adress" style={{fontSize: 20}} />
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Date of Birth" style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Item regular style={{marginTop: 10}}>
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Mailing Adress" style={{fontSize: 20, marginStart: 7}} />
+              </Item>
+              <Item rounded style={{marginTop: 10}}>
                 <Input
                   placeholder="Transit Account Holder"
-                  style={{fontSize: 20}}
+                  style={{fontSize: 20, marginStart: 7}}
                 />
               </Item>
-              <Item regular style={{marginTop: 10}}>
+              <Item rounded style={{marginTop: 10}}>
                 <Input
                   placeholder="Transit Account Number"
-                  style={{fontSize: 20}}
+                  style={{fontSize: 20, marginStart: 7}}
                 />
               </Item>
-              <Item regular style={{marginTop: 10}}>
-                <Input placeholder="Source of Wealth" style={{fontSize: 20}} />
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Source of Wealth" style={{fontSize: 20, marginStart: 7}} />
               </Item>
-              <Text style={{marginTop: 10}}>Client Knowledge</Text>
+              <Text style={{marginTop: 10, marginStart:5}}>Client Knowledge</Text>
               <Form>
                 <Picker
                   note
@@ -291,7 +298,7 @@ export default class PickerExample extends Component {
                   <Picker.Item label="Private" value="key2" />
                 </Picker>
               </Form>
-              <Text style={{marginTop: 10}}>PEP Check</Text>
+              <Text style={{marginTop: 10, marginStart: 5}}>PEP Check</Text>
               <Form>
                 <Picker
                   note
