@@ -31,7 +31,7 @@ export default class UpcomingEvents extends Component {
             <CardItem
               header
               bordered
-              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
+              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
                 UPCOMING EVENTS
@@ -39,8 +39,16 @@ export default class UpcomingEvents extends Component {
             </CardItem>
             <CardItem>
               <Left>
-                <Button style={{backgroundColor: '#103662'}}>
-                  <Text style={{fontSize: 20, textAlign: 'center'}}> 09 APR</Text>
+              <Button
+                      bordered
+                      style={{
+                        borderColor: '#103662',
+                        borderStartWidth: 2,
+                        borderEndWidth: 2,
+                        borderTopWidth: 2,
+                        borderBottomWidth: 2,
+                      }}>
+                  <Text style={{fontSize: 20, textAlign: 'center', color: '#103667', fontWeight: 'bold'}}> 09 APR</Text>
                 </Button>
                 <Body>
                   <Text style={{fontSize: 20,}} >Meeting with Elon</Text>
@@ -49,13 +57,31 @@ export default class UpcomingEvents extends Component {
                 </Body>
               </Left>
             </CardItem>
-            
+            <CardItem>
+              <Left>
+              <Button
+                      bordered
+                      style={{
+                        borderColor: '#103662',
+                        borderStartWidth: 2,
+                        borderEndWidth: 2,
+                        borderTopWidth: 2,
+                        borderBottomWidth: 2,
+                      }}>
+                  <Text style={{fontSize: 20, textAlign: 'center', color: '#103662', fontWeight: 'bold'}}> 10 JUN</Text>
+                </Button>
+                <Body>
+                  <Text style={{fontSize: 20,}}>Product Training</Text>
+                  <Text style={{fontSize: 20,}}>8am - 10am</Text>
+                </Body>
+              </Left>
+            </CardItem>
           </Card>
           <Card transparent style={{borderRadius: 8}}>
             <CardItem
               header
               bordered
-              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
+              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
                 NOTIFICATIONS

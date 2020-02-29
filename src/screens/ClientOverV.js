@@ -92,7 +92,7 @@ export default class PickerExample extends Component {
                   </Body>
                 </CardItem>
               </Card>
-              <Card transparent style={{borderBottomWidth: 0.5}}>
+              <Card transparent>
                 <CardItem>
                   <Body>
                     <Text style={{fontSize: 20}}>Total Net Assets</Text>
@@ -117,11 +117,11 @@ export default class PickerExample extends Component {
                   </Body>
                 </CardItem>
               </Card>
-              <Card transparent style={{borderRadius: 8}}>
+              <Card transparent style={{borderRadius: 8, borderTopWidth: 1}}>
                 <CardItem
                   header
-                  bordered
-                  style={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
+                  bordered 
+                  style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1 }}>
                   <Text
                     style={{
                       fontSize: 20,
@@ -133,8 +133,16 @@ export default class PickerExample extends Component {
                 </CardItem>
                 <CardItem>
                   <Left>
-                    <Button bordered style={{borderColor: '#103662', borderStartWidth: 2, borderEndWidth: 2, borderTopWidth: 2, borderBottomWidth: 2}}>
-                      <Text style={{fontSize: 20, textAlign: 'center', color: '#103662'}}>
+                    <Button
+                      bordered
+                      style={{
+                        borderColor: '#103662',
+                        borderStartWidth: 2,
+                        borderEndWidth: 2,
+                        borderTopWidth: 2,
+                        borderBottomWidth: 2,
+                      }}>
+                      <Text style={{fontSize: 20, color: '#103662', fontWeight: 'bold'}}>
                         {' '}
                         09 APR
                       </Text>
@@ -155,7 +163,6 @@ export default class PickerExample extends Component {
                     </Text>
                   </Body>
                 </CardItem>
-                
               </Card>
             </Content>
           </Tab>
