@@ -34,7 +34,7 @@ export default class UpcomingEvents extends Component {
               style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
-                UPCOMING EVENTS
+                Upcoming Events 
               </Text>
             </CardItem>
             <CardItem>
@@ -84,7 +84,7 @@ export default class UpcomingEvents extends Component {
               style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
-                NOTIFICATIONS
+                Notifications 
               </Text>
             </CardItem>
             <CardItem>
