@@ -18,12 +18,12 @@ export default class App extends Component {
   render() {
     return (
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Dashboard">
-          <Drawer.Screen name="Dashboard" component={Dashboard} />
+        <Drawer.Navigator initialRouteName="Login" >
+          <Drawer.Screen name="Dashboard" component={Dashboard}/>
           <Drawer.Screen name="Login" component={Login} />
           <Drawer.Screen name="New Client" component={NewClient} />
           <Drawer.Screen name="Client List" component={ClientList} />
-          <Drawer.Screen name="Client overview" component={ClientOverV} />
+          <Drawer.Screen name="Client Overview" component={ClientOverV} />
         </Drawer.Navigator>
       </NavigationContainer>
       /*
