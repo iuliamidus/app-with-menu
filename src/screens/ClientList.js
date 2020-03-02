@@ -20,11 +20,7 @@ export default class ClientList extends Component {
             <Input placeholder="Search"/>
             <Icon name="ios-people" />
           </Item>
-          <Button transparent >
-            <Text style={{color: '#103662'}}>Search</Text>
-          </Button>
-        </Header>
-        <Content>
+          
           <List>
             <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
             <Left>
@@ -35,7 +31,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -48,7 +44,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -62,7 +58,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -76,7 +72,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -90,7 +86,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -104,7 +100,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -118,7 +114,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -132,7 +128,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -146,7 +142,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -160,7 +156,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -174,7 +170,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -188,7 +184,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>
@@ -202,7 +198,7 @@ export default class ClientList extends Component {
               </Body>
               <Right>
                 <Button transparent>
-                  <Text style={{color: '#103662'}}>View</Text>
+                  <Text>View</Text>
                 </Button>
               </Right>
             </ListItem>

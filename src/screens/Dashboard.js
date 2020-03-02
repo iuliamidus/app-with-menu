@@ -68,14 +68,14 @@ export default class UpcomingEvents extends Component {
       <Container>
         <CSHeader pageTitle={pageTitle}/>
         <Content padder>
-          <Card transparent style={{borderRadius: 8}}>
+          <Card style={{borderRadius: 8}}>
             <CardItem
               header
               bordered
-              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
+              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
-                Upcoming Events 
+                UPCOMING EVENTS
               </Text>
               <Text>
               {items.length}
@@ -83,72 +83,60 @@ export default class UpcomingEvents extends Component {
             </CardItem>
             <CardItem>
               <Left>
-              <Button
-                      bordered
-                      style={{
-                        borderColor: '#103662',
-                        borderStartWidth: 2,
-                        borderEndWidth: 2,
-                        borderTopWidth: 2,
-                        borderBottomWidth: 2,
-                      }}>
-                  <Text style={{fontSize: 20, textAlign: 'center', color: '#103667', fontWeight: 'bold'}}> 09 APR</Text>
+                <Button backgroundColor="#103662">
+                  <Text> 09{'\n'}APR</Text>
                 </Button>
                 <Body>
-                  <Text style={{fontSize: 20,}} >Meeting with Elon</Text>
-                  <Text style={{fontSize: 20,}}>Credit Suisse Office</Text>
-                  <Text style={{fontSize: 20,}}>5pm - 7pm</Text>
+                  <Text>Meeting with Elon</Text>
+                  <Text>Credit Suisse Office</Text>
+                  <Text>5pm - 7pm</Text>
                 </Body>
               </Left>
             </CardItem>
             <CardItem>
               <Left>
-              <Button
-                      bordered
-                      style={{
-                        borderColor: '#103662',
-                        borderStartWidth: 2,
-                        borderEndWidth: 2,
-                        borderTopWidth: 2,
-                        borderBottomWidth: 2,
-                      }}>
-                  <Text style={{fontSize: 20, textAlign: 'center', color: '#103662', fontWeight: 'bold'}}> 10 JUN</Text>
+                <Button backgroundColor="#103662">
+                  <Text> 10{'\n'}JUN</Text>
                 </Button>
                 <Body>
-                  <Text style={{fontSize: 20,}}>Product Training</Text>
-                  <Text style={{fontSize: 20,}}>8am - 10am</Text>
+                  <Text>Product Training</Text>
+                  <Text>8am - 10am</Text>
                 </Body>
               </Left>
             </CardItem>
+            <CardItem
+              bordered
+              style={{
+                borderBottomLeftRadius: 8,
+                borderBottomRightRadius: 8,
+              }}></CardItem>
           </Card>
-          <Card transparent style={{borderRadius: 8}}>
+          <Card style={{borderRadius: 8}}>
             <CardItem
               header
               bordered
-              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8, borderBottomWidth: 1}}>
+              style={{borderTopLeftRadius: 8, borderTopRightRadius: 8}}>
               <Text
                 style={{fontSize: 20, fontWeight: 'bold', color: '#103662'}}>
-                Notifications 
+                NOTIFICATIONS
               </Text>
             </CardItem>
             <CardItem>
               <Body>
-                <Text style={{fontSize: 20}}>- EXT.1 up by 0.8%</Text>
-                <Text style={{fontSize: 20}}>
+                <Text style={{fontSize: 25}}>- EXT.1 up by 0.8%</Text>
+                <Text style={{fontSize: 25}}>
                   - FTSE down by 1.7%{' '}
                   <Icon name="alert" style={{fontSize: 30, color: 'red'}} />
                 </Text>
               </Body>
             </CardItem>
-
-  <CardItem
+            <CardItem
               bordered
               style={{
                 borderBottomLeftRadius: 8,
                 borderBottomRightRadius: 8,
               }}>
         </CardItem>
-
           </Card>
           <Card>
           {items.map(item => (

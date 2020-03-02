@@ -57,11 +57,11 @@ export default class Login extends Component {
           />
           <Form>
             <Item inlineLabel>
-              <Label style={{fontSize:20}}>Username</Label>
+              <Label>Username</Label>
               <Input />
             </Item>
             <Item inlineLabel last>
-              <Label style={{fontSize:20}}>Password</Label>
+              <Label>Password</Label>
               <Input />
             </Item>
           </Form>
@@ -78,7 +78,7 @@ export default class Login extends Component {
               this.props.navigation.navigate('Dashboard')
             } /*onPress={this._onLogin}*/
           >
-            <Text style={{fontSize:20}}>Login</Text>
+            <Text>Login</Text>
           </Button>
         </Content>
       </Container>
