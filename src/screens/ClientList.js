@@ -1,26 +1,25 @@
 import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text, List, ListItem, Thumbnail, Item, Input, StatusBar } from 'native-base';
 import {createStackNavigator} from '@react-navigation/stack';
 import React, {Component} from 'react';
-import { useNavigation } from '@react-navigation/native';
 import CSHeader from '../components/CSHeader';
-import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-
 //import CSHeader from '../components/CSHeader';
 
 export default class ClientList extends Component {
   render() {
-    const pageTitle='Client List'
     return (
       <Container>
-        <CSHeader pageTitle={pageTitle}/>
-        <Content>
-        <Item>
+        <CSHeader/>
+        <Header searchBar rounded>
+          <Item>
             <Icon name="ios-search" />
-            <Input placeholder="Search"/>
+            <Input placeholder="Search" />
             <Icon name="ios-people" />
           </Item>
-          
+          <Button transparent >
+            <Text style={{color: '#103662'}}>Search</Text>
+          </Button>
+        </Header>
+        <Content>
           <List>
             <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
             <Left>

@@ -4,7 +4,7 @@ import { Header, Text, Title, Left, Right, Body, Icon, Button, StatusBar} from '
 import { useNavigation } from '@react-navigation/native';
 
 
-export default function CSHeader(props) {
+export default function CSHeader() {
 
     const navigation = useNavigation();
 
@@ -16,7 +16,7 @@ export default function CSHeader(props) {
             </Button>
           </Left>
           <Body>
-            <Title style={{color: 'white'}}>{props.pageTitle}</Title>
+            <Title style={{color: 'white'}}>Dashboard</Title>
           </Body>
           <Right />
         </Header>
