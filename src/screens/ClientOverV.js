@@ -1,5 +1,5 @@
 import {createStackNavigator} from '@react-navigation/stack';
-
+import { useNavigation } from '@react-navigation/native';
 import React, {Component} from 'react';
 import {
   Container,
@@ -43,7 +43,9 @@ export default class PickerExample extends Component {
     });
   }
 
-  render() {
+  render()
+  
+  {
     const line = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June'],
       datasets: [
@@ -53,8 +55,10 @@ export default class PickerExample extends Component {
         },
       ],
     };
+    const pageTitle= 'Ali Owrak'
     return (
       <Container>
+       <CSHeader pageTitle={pageTitle}/>
         <CSHeader />
 
         <Tabs tabBarUnderlineStyle={{backgroundColor: '#103662', height: 4}}>

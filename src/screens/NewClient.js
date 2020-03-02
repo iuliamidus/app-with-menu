@@ -20,6 +20,7 @@ import {
 import {Image, StatusBar} from 'react-native';
 import {color} from 'react-native-reanimated';
 import CSHeader from '../components/CSHeader';
+
 export default class PickerExample extends Component {
   constructor(props) {
     super(props);
@@ -64,6 +65,41 @@ export default class PickerExample extends Component {
               placeholder="First Name"
               style={{fontSize: 20, marginStart: 7}}
             />
+
+import { useNavigation } from '@react-navigation/native';
+
+export default class NewClient extends Component {
+  render() {
+    const pageTitle='Add New Client';
+    return (
+      <Container>
+        <CSHeader pageTitle={pageTitle}/>
+        <Content>
+          <Form>
+          
+            <Item floatingLabel>
+              <Label>First Name</Label>
+              <Input />
+            </Item>
+            <Item  floatingLabel last style = {marginTop=40} >
+              <Label>Middle Name</Label>
+              <Input />
+            </Item>
+            <Item floatingLabel last style = {marginTop=40}>
+              <Label>Last Name</Label>
+              <Input />
+            </Item>
+            <Item floatingLabel last style = {marginTop=40} >
+              <Label>E-mail Address</Label>
+              <Input />
+            </Item>
+            <Item floatingLabel last style = {marginTop=40, marginBottom=60}>
+              <Label>Phone number</Label>
+              <Input />
+            </Item>
+            <Item regular style = {marginTop=60, marginBottom=60}>
+            <Input placeholder='Additional information' />
+
           </Item>
           <Item rounded style={{marginTop: 10}}>
             <Input
