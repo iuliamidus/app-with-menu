@@ -93,14 +93,15 @@ export default class PickerExample extends Component {
           <Right>
           <Button
             style={{
-              
+              alignSelf: 'center',
               backgroundColor: '#103662',
               marginTop: 20,
-              marginLeft: 40,
+              marginLeft:0,
               width: 150,
               height: 50,
             }}>
-            <Text>Login</Text>
+            
+          <Text style={{marginLeft:40}}>Save</Text>
           </Button>
           </Right>
 
