@@ -30,7 +30,7 @@ import {
 } from 'native-base';
 import CSHeader from '../components/CSHeader';
 
-export default class ClientOverview extends Component {
+export default class ClientOverV extends Component {
   constructor(props) {
     super(props);
     this.state = {

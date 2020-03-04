@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 /*Navigation*/
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
@@ -11,6 +11,7 @@ import Dashboard from './src/screens/Dashboard';
 import NewClient from './src/screens/NewClient';
 import ClientList from './src/screens/ClientList';
 import ClientOverV from './src/screens/ClientOverV';
+
 //const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 

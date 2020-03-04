@@ -33,7 +33,9 @@ export default class UpcomingEvents extends Component {
 
     var url =
       "https://newsapi.org/v2/top-headlines?" +
-      "country=us&" +
+      "country=gb&" +
+      "category=business&"+
+      "pageSize=5&"+
       "apiKey=9cb1bba31aa54d038eb01b75da21cd94";
 
     fetch(url)
@@ -151,21 +153,7 @@ export default class UpcomingEvents extends Component {
              </CardItem>
             ))}
            </Card>
-      
-        
-          <Card>
-          {items.map(item => (
-            <CardItem>
-              <Text key={item.title}>
-              </Text>
-              <Icon active name="logo-googleplus" />
-              <Text>{item.title}</Text>
-              <Right>
-                <Icon name="arrow-forward" />
-              </Right>
-             </CardItem>
-            ))}
-           </Card>
+
         </Content>
       </Container>
     );

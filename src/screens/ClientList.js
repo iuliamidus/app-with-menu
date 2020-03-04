@@ -6,9 +6,10 @@ import CSHeader from '../components/CSHeader';
 
 export default class ClientList extends Component {
   render() {
+    const pageTitle= 'Client List';
     return (
       <Container>
-        <CSHeader/>
+        <CSHeader pageTitle={pageTitle}/>
         <Header searchBar rounded>
           <Item>
             <Icon name="ios-search" />
@@ -23,182 +24,109 @@ export default class ClientList extends Component {
           <List>
             <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
             <Left>
-                <Thumbnail circular source={{ uri: 'https://api.time.com/wp-content/uploads/2019/04/mark-zuckerberg-time-100-2019.jpg?quality=85&zoom=2' }} />
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/xH4pJfw-QdCwT2mIqKrOIzVU9F2-YtnBrKRNlgxEJEIt2sJgyQimTaw777_e4XlRzInwn6nCJ2rwiMygDHVQcmkDO3tJgDnEqFZs3r1NUXt1pbrqZvO9fgyEojnLXWfgLrU' }} />
               </Left>
               <Body>
-                <Text style={{fontSize: 20}}>Mark Zuckerberg</Text>
+                <Text style={{fontSize: 20}}>Ali Owrak</Text>
               </Body>
               <Right>
-                <Button transparent>
-                  <Text>View</Text>
+                <Button bordered style={{color:'103662'}} 
+                onPress={() =>
+                  this.props.navigation.navigate('ClientsNavigator', {screen: 'ClientOverview'})
+                }>
+                  <Text style={{color: '#103662'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
+
+            <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
+            <Left>
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/xH4pJfw-QdCwT2mIqKrOIzVU9F2-YtnBrKRNlgxEJEIt2sJgyQimTaw777_e4XlRzInwn6nCJ2rwiMygDHVQcmkDO3tJgDnEqFZs3r1NUXt1pbrqZvO9fgyEojnLXWfgLrU' }} />
+              </Left>
+              <Body>
+                <Text style={{fontSize: 20}}>Ali Owrak</Text>
+              </Body>
+              <Right>
+                <Button bordered style={{color:'103662'}} 
+                onPress={() =>
+                  this.props.navigation.navigate('ClientOverV')
+                }>
+                  <Text style={{color: '#103662'}}>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+
+            <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
+            <Left>
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/xH4pJfw-QdCwT2mIqKrOIzVU9F2-YtnBrKRNlgxEJEIt2sJgyQimTaw777_e4XlRzInwn6nCJ2rwiMygDHVQcmkDO3tJgDnEqFZs3r1NUXt1pbrqZvO9fgyEojnLXWfgLrU' }} />
+              </Left>
+              <Body>
+                <Text style={{fontSize: 20}}>Ali Owrak</Text>
+              </Body>
+              <Right>
+                <Button bordered style={{color:'103662'}} 
+                onPress={() =>
+                  this.props.navigation.navigate('ClientOverV')
+                }>
+                  <Text style={{color: '#103662'}}>View</Text>
+                </Button>
+              </Right>
+            </ListItem>
+                
             <ListItem thumbnail style={{marginTop: 10, marginBottom: 20}} >
             <Left>
-                <Thumbnail circular source={{ uri: 'https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg' }} />
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/nLzSlghoUSDucmhDZbZIN26X5GirVVvmscIm4hHql9j5vqTQmKWfZbayg0Mb8maWKD3NWnkcGUDmUa2xr6mlgZn1_0jKwGMbFeW1Xf5OfOCRmwzQ4GX2p0gpmhVAr4AircRiUQ' }} />
               </Left>
               <Body>
                 <Text style={{fontSize: 20}}>Elon Musk</Text>
               </Body>
               <Right>
-                <Button transparent>
-                  <Text>View</Text>
+                <Button bordered>
+                  <Text style={{color:'#103662'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
 
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
+            <ListItem thumbnail style={{marginTop: 20, marginBottom: 20}}>
             <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/xH4pJfw-QdCwT2mIqKrOIzVU9F2-YtnBrKRNlgxEJEIt2sJgyQimTaw777_e4XlRzInwn6nCJ2rwiMygDHVQcmkDO3tJgDnEqFZs3r1NUXt1pbrqZvO9fgyEojnLXWfgLrU' }} />
               </Left>
               <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
+                <Text style={{fontSize: 20}}>Ali Owrak</Text>
               </Body>
               <Right>
-                <Button transparent>
-                  <Text>View</Text>
+                <Button bordered style={{color:'103662'}} 
+                onPress={() =>
+                  this.props.navigation.navigate('ClientOverV')
+                }>
+                  <Text style={{color: '#103662'}}>View</Text>
                 </Button>
               </Right>
             </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
+           
+            <ListItem thumbnail style={{marginTop: 10, marginBottom: 20}} >
             <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
+                <Thumbnail circular source={{ uri: 'https://lh3.googleusercontent.com/proxy/nLzSlghoUSDucmhDZbZIN26X5GirVVvmscIm4hHql9j5vqTQmKWfZbayg0Mb8maWKD3NWnkcGUDmUa2xr6mlgZn1_0jKwGMbFeW1Xf5OfOCRmwzQ4GX2p0gpmhVAr4AircRiUQ' }} />
               </Left>
               <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
+                <Text style={{fontSize: 20}}>Elon Musk</Text>
               </Body>
               <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-         
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
- 
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
-              </Right>
-            </ListItem>
-
-            <ListItem thumbnail style ={{marginTop: 20, marginBottom: 20}}>
-            <Left>
-                <Thumbnail circular source={{ uri: 'https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/15823444_1301814059857341_2563288695286979024_n.jpg?_nc_cat=106&_nc_ohc=AcapZ0bUML8AX9i90J_&_nc_ht=scontent-lht6-1.xx&oh=f7c8acc699dee91dd591d06081ad4d9c&oe=5EC99472' }} />
-              </Left>
-              <Body>
-                <Text style={{fontSize: 20}}>Dovydas Tamasauskas</Text>
-              </Body>
-              <Right>
-                <Button transparent>
-                  <Text>View</Text>
-                </Button>
+              <Button
+            style={{
+              backgroundColor: '#103662',
+              marginTop: 20,
+              marginLeft: 20,
+              width: 100,
+              height: 30,
+            }}
+            block
+            onPress={() =>
+              this.props.navigation.navigate('ClientOverV')
+            } /*onPress={this._onLogin}*/
+          >
+            <Text>view</Text>
+          </Button>
               </Right>
             </ListItem>
 

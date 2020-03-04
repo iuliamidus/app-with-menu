@@ -34,6 +34,7 @@ export default class PickerExample extends Component {
   }
 
   render() {
+    const pageTitle = 'Add new client';
     const line = {
       labels: ['January', 'February', 'March', 'April', 'May', 'June'],
       datasets: [
@@ -46,7 +47,7 @@ export default class PickerExample extends Component {
 
     return (
       <Container>
-        <CSHeader />
+        <CSHeader pageTitle={pageTitle}/>
         <Content padder>
           <Text
             style={{
