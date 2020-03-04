@@ -305,17 +305,26 @@ export default class ClientOverV extends Component {
               marginTop: 20,
               marginStart: 15,
             }}>
-            Onboarding 
+            Onboarding Information
           </Text>
 
           <Item rounded style={{marginTop: 10}}>
-                <Input placeholder="Residential Address " style={{fontSize: 20, marginStart: 7}} />
+                <Input placeholder="Date of Birth " style={{fontSize: 20, marginStart: 7}} />
               </Item>
               <Item rounded style={{marginTop: 10}}>
-                <Input placeholder="Date of Birth" style={{fontSize: 20, marginStart: 7}} />
+                <Input placeholder="Residential Address" style={{fontSize: 20, marginStart: 7}} />
               </Item>
               <Item rounded style={{marginTop: 10}}>
                 <Input placeholder="Mailing Adress" style={{fontSize: 20, marginStart: 7}} />
+              </Item>
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Nationality" style={{fontSize: 20, marginStart: 7}} />
+              </Item>
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Reporting Language" style={{fontSize: 20, marginStart: 7}} />
+              </Item>
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Reporting Currency" style={{fontSize: 20, marginStart: 7}} />
               </Item>
               <Item rounded style={{marginTop: 10}}>
                 <Input
@@ -328,6 +337,9 @@ export default class ClientOverV extends Component {
                   placeholder="Transit Account Number"
                   style={{fontSize: 20, marginStart: 7}}
                 />
+              </Item>
+              <Item rounded style={{marginTop: 10}}>
+                <Input placeholder="Sector" style={{fontSize: 20, marginStart: 7}} />
               </Item>
               <Item rounded style={{marginTop: 10}}>
                 <Input placeholder="Source of Wealth" style={{fontSize: 20, marginStart: 7}} />
@@ -378,6 +390,7 @@ export default class ClientOverV extends Component {
                 <CheckBox checked={false} /*this needs functionality*/ />
                 <Body>
                   <Text style={{fontSize:20}}>Yes</Text>
+
                 </Body>
               </ListItem>
               <ListItem>
